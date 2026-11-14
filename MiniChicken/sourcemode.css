@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** markdown source **/
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property
+{
+    color: #AF3A03;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
+    border-left: 3px solid #3C3836;
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #7C6F64;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #79740E
+;}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+    color: #8F3F71;
+    font-style: italic;
+}
+
+.cm-s-typora-default .cm-link {
+    color: #076678;
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: rgba(213, 196, 161, 0.35);
+}
+
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
+	color: #7C6F64;
+}

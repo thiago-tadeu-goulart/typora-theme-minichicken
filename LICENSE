@@ -1,0 +1,61 @@
+MiniChicken for Typora
+Copyright (c) 2026 thiago-tadeu-goulart
+
+This theme keeps the typography, layout and CSS structure of Typora's
+built-in Night theme, and applies color values from the Gruvbox Light
+palette together with MiniChicken-specific adjustments (including the
+highlight color).
+
+Sources and licenses
+--------------------
+
+1. Typora Night theme
+   https://github.com/typora/typora-default-themes
+   (themes/night.css and the files under themes/night/)
+
+   That repository does not include a license file. Typora documents
+   that users may modify CSS themes and share custom themes through
+   the official theme gallery:
+   https://support.typora.io/About-Themes/
+   https://theme.typora.io/doc/
+
+   This work does not claim ownership of the Night theme itself.
+   credit.html is kept from Night and attributes Freepik icons from
+   www.flaticon.com under Creative Commons Attribution 3.0:
+   https://creativecommons.org/licenses/by/3.0/
+
+2. Gruvbox color scheme by Pavel Pertsev (morhetz)
+   https://github.com/morhetz/gruvbox
+   License: MIT / X11 (see https://en.wikipedia.org/wiki/MIT_License
+   and the package.json license field in that repository).
+
+   The MIT license text for the Gruvbox color values is included
+   below. Copyright (c) Pavel Pertsev.
+
+The MIT license below covers the MiniChicken modifications and the
+use of the Gruvbox color values. It does not replace any rights that
+Typora or others may hold in the Night theme CSS.
+
+======================================================================
+MIT License
+
+Copyright (c) 2026 thiago-tadeu-goulart
+Copyright (c) Pavel Pertsev (Gruvbox color scheme)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

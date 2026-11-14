@@ -1,0 +1,11 @@
+:root { --mermaid-theme: default; }
+/* Native light Mermaid rendering, with warm surfaces where exposed. */
+[lang='mermaid'] .label, [lang='mermaid'] .nodeLabel { color: #3C3836; }
+[lang='mermaid'] .node rect, [lang='mermaid'] .node circle,
+[lang='mermaid'] .node ellipse, [lang='mermaid'] .node polygon,
+[lang='mermaid'] .actor { fill: #EBDBB2; stroke: #B57614; }
+[lang='mermaid'] .cluster rect { fill: #F2E5BC; stroke: #BDAE93; }
+[lang='mermaid'] text { fill: #3C3836; }
+[lang='mermaid'] .edgePath path, [lang='mermaid'] .flowchart-link,
+[lang='mermaid'] .messageLine0, [lang='mermaid'] .messageLine1 { stroke: #665C54; }
+[lang='mermaid'] .edgeLabel, [lang='mermaid'] .edgeLabel p { background-color: #FBF1C7; color: #3C3836; }
