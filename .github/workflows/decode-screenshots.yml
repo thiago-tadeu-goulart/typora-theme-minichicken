@@ -1,0 +1,40 @@
+name: Decode screenshots
+
+on:
+  push:
+    paths:
+      - "screenshots/*.b64"
+      - ".github/workflows/decode-screenshots.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode base64 screenshots into PNG files
+        run: |
+          python3 << 'PY'
+          import base64
+          from pathlib import Path
+          root = Path("screenshots")
+          for src in sorted(root.glob("*.b64")):
+              dest = root / src.name[:-4]
+              data = base64.b64decode(src.read_text())
+              dest.write_bytes(data)
+              print(f"wrote {dest} ({len(data)} bytes)")
+          PY
+      - name: Commit PNG files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add screenshots/*.png
+          if git diff --cached --quiet; then
+            echo "No PNG changes"
+          else
+            git commit -m "Add MiniChicken screenshots as binary PNGs"
+            git push
+          fi
